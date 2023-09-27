@@ -95,12 +95,14 @@
     
     const canvaRound = document.getElementById('canvaRound');
     const contextCanvaRound = canvaRound.getContext('2d');
-    canvaRound.style.top = "50px";
-  canvaRound.style.left = "0px";
-  canvaRound.style.position = "relative";
+    canvaRound.style.top = window.innerHeight - (95*window.innerHeight/100);
+    canvaRound.style.left = "0px";
+    canvaRound.style.position = "relative";
   
     const ctx = document.getElementById('ctx');
     const context = ctx.getContext('2d');
+    ctx.style.top = window.innerHeight - (108*window.innerHeight/100);
+    ctx.style.position = "relative";
       
     // The x and y offset of the canvas from the edge of the page
     const rect = ctx.getBoundingClientRect();
